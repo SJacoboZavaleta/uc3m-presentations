@@ -1,0 +1,283 @@
+---
+pagetitle: "Robot Autonomy"
+subtitle: "Autonomus and intelligent robots"
+author: "Sergio Jácobo"
+date: "8 oct 2024"
+email: "sergioaugustoantenor.jacobo@alumnos.uc3m.es"
+host: "Ihaka Lecture"
+institute: "Carlos III University"
+department: "Systems Engineering and Automation Department"
+strip-comments: true
+format: 
+  revealjs:
+    logo: "images/uc3m_logo2_vector.svg"
+    slide-number: true
+    multiplex: true
+    pdf: true
+    theme: assets/monash.scss
+    show-slide-number: all
+    controls: true
+    width: 1280
+    height: 720
+    css: [assets/custom.css, assets/pacman.css, assets/tachyons-addon.css, assets/slide-types.css]
+    include-after: |
+      <link rel="stylesheet" href="assets/syntax-highlight.css">
+      <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.min.css">
+      <script src="assets/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+callout-icon: false
+execute:
+  echo: true
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+
+actor_shell <- function(fn, wo) {
+  force(fn)
+  force(wo)
+  function(w, flip = FALSE, other = "") {
+    w <- ifelse(missing(w), wo, w)
+    glue::glue('<img src="images/characters/{fn}" {other} width="{w}" class="{ifelse(flip, "img-hor", "")}">')
+  }
+}
+
+domain <- actor_shell("robot1.svg", "100px")
+stat <- actor_shell("robot2.svg", "120px")
+analyst <- actor_shell("robot3.svg", "100px")
+tech <- actor_shell("robot4.svg", "220px")
+tech2 <- actor_shell("robot5.svg", "100px")
+actor1 <- actor_shell("robot5.svg", "100px")
+actor2 <- actor_shell("robot5.svg", "100px")
+
+asimo <- actor_shell("asimo.svg", "120px")
+atlas <- actor_shell("atlas.svg", "120px")
+ur <- actor_shell("ur.svg", "120px")
+kuka <- actor_shell("kuka.svg", "120px")
+boston <- actor_shell("boston.svg", "120px")
+noa <- actor_shell("noa.svg", "120px")
+
+rotating_text <- function(x, align = "center") {
+  glue::glue('
+<div style="overflow: hidden; height: 1.2em;">
+<ul class="content__container__list {align}" style="text-align: {align}">
+<li class="content__container__list__item">{x[1]}</li>
+<li class="content__container__list__item">{x[2]}</li>
+<li class="content__container__list__item">{x[3]}</li>
+<li class="content__container__list__item">{x[4]}</li>
+</ul>
+</div>')
+}
+
+fa_list <- function(x, incremental = FALSE) {
+  icons <- names(x)
+  fragment <- ifelse(incremental, "fragment", "")
+  items <- glue::glue('<li class="{fragment}"><span class="fa-li"><i class="{icons}"></i></span> {x}</li>')
+  paste('<ul class="fa-ul">', 
+        paste(items, collapse = "\n"),
+        "</ul>", sep = "\n")
+}
+
+```
+
+# [`r rmarkdown::metadata$pagetitle`]{.monash-blue} {#title-slide background-image="images/bg-01n.svg"}
+
+<img src="images/uc3m_logo_vector.svg"  style="position:absolute;top:-200px;left:0px;" height="100px">
+
+<br>
+
+<h2>`r rmarkdown::metadata$subtitle`</h2>
+
+::: {.bottom_abs .width100}
+
+Student: *`r rmarkdown::metadata$author`*
+
+<i class="fas fa-university"></i> `r rmarkdown::metadata$department`, <Br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`r rmarkdown::metadata$institute`, Madrid, Spain
+
+<i class="fas fa-envelope"></i>  `r rmarkdown::metadata$email`
+
+<!-- <a href="https://twitter.com/" style="color:black"><i class="fab fa-twitter"></i> @statsgen</a> -->
+
+<i class="fas fa-calendar-alt"></i> `r rmarkdown::metadata$date`
+
+:::
+
+## Key ideas
+
+::: {.flex .justify-around}
+::: w-30
+<img src="images/robotDraft1.svg"  height="400px">
+:::
+
+::: w-30
+<img src="images/robotDraft2.svg"  height="400px">
+:::
+
+::: w-30
+<img src="images/robotDraft3.svg"  height="400px">
+:::
+
+:::
+
+::: {.flex .justify-around}
+::: w-30
+*One, two, three ... again*
+:::
+
+::: w-30
+*Where should I go?*
+:::
+
+::: w-30
+*Is there any life waiting to be discovered?*
+:::
+
+:::
+
+
+# [What does `autonomy` mean in robotics?]{.strokeme} {.monash-bg-blue2}
+
+
+
+## {auto-animate=true}
+
+::: {.fragment .fade-up fragment-index=1}
+<h2>A draft [meaning]{.monash-blue2} </h2>
+:::
+
+::: flex
+
+::: w-20
+`r domain(w = "200px")`
+:::
+
+::: w-80 
+<Br><br>
+
+::: f2
+`r rotating_text(c('[**Following a black line** along a path]{.speech}', '[**Palletizing** shipping boxes in a factory]{.speech}', '[**Cleaning** floors by convering the entire house]{.speech}', '[**Exploring** the surface of an unknown planet]{.speech}', '[Engaging in a queation-answer interaction with elderly people]{.speech}'), align = 'left!important')`
+:::
+
+
+<br><br> 
+
+::: {.fragment .fade-up fragment-index=1}
+The capacity to perform specific tasks without [**"human interaction"**]{.monash-blue2} within a known working environment.
+:::
+
+:::
+
+:::
+
+::: {.absolute .bottom-0 .f5}
+A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-premium/dibujo-robot_43901311.htm">Freepik</a>
+:::
+
+
+## Should a robot be [autonomous]{.monash-ruby2}{auto-animate=true}
+
+::: flex
+
+
+::: w-80 
+
+[**Yes**, of course !!!]{.speech .f3 .fr}
+
+<br>
+
+<div class="fat-diet">Why?</div>
+
+`r fa_list(c("fa-solid fa-spinner fa-pulse" = "Minimize working load and maximize productivity", "fa-solid fa-user-slash fa-beat" = "Perform continuos work even without constant human communication/supervision"), incremental = TRUE)`
+
+:::
+
+::: w-20
+
+`r asimo(w = "100%")`
+
+:::
+
+:::
+
+::: {.absolute .bottom-0 .f5}
+<a href="https://en.wikipedia.org/wiki/ASIMO">ASIMO</a> (2000) at the Expo 2005 from <a href="https://commons.wikimedia.org/wiki/File:HONDA_ASIMO.jpg">Wikipedia</a>
+:::
+
+## Should a robot be [autonomous]{.monash-ruby2}{auto-animate=true}
+
+::: flex
+
+::: w-80 
+
+[**Yes**, of course !!!]{.speech .f3 .fr}
+
+<br>
+
+<div class="fat-diet">Why?</div>
+<div class="control-diet" data-id="trt1">How?</div>
+
+`r fa_list(c("fa-solid fa-gear fa-spin" = "Hability to take own decisions based on sensor data", "fa-solid fa-robot fa-bounce" = "Interact with the environment based on any kind of manipulation/communication"), incremental = TRUE)`
+:::
+
+::: w-20
+
+`r asimo(w = "100%")`
+
+:::
+
+:::
+
+::: {.absolute .bottom-0 .f5}
+<a href="https://en.wikipedia.org/wiki/ASIMO">ASIMO</a> (2000) at the Expo 2005 from <a href="https://commons.wikimedia.org/wiki/File:HONDA_ASIMO.jpg">Wikipedia</a>
+:::
+
+# [What robots are there today?]{.strokeme} {.bg-green}
+
+## [Estado del Arte]{.monash-blue} {.title-slide2 auto-animate=true}
+
+::: flex
+
+::: w-90
+
+<center>
+<img src="images/robotComparison.svg"  style="position:absolute;top:25px;left:0px;" height="800px">
+</center>
+
+:::
+
+::: w-10
+
+::: small
+1. &nbsp;[A line follower](https://botland.store/withdrawn-products/2740-line-tracing-car-line-follower-robot-diy-kit-5904422360931.html),
+2. &nbsp;[Google's self-driving car](https://www.inverse.com/article/10923-google-s-self-driving-cars-drive-3-million-simulated-miles-a-day)
+3. &nbsp;[Curiosity rover]( https://www.jpl.nasa.gov/missions/mars-science-laboratory-curiosity-rover-msl/)
+4. &nbsp;[Care-O-bot 4](https://www.care-o-bot.de/en/care-o-bot-4.html)
+5. &nbsp;[Santuary](https://techcrunch.com/2024/04/25/sanctuarys-new-humanoid-robot-learns-faster-and-costs-less/)
+6. &nbsp;[Industrial robots](https://5thaxis.com/automation/)
+7. &nbsp;[Sophia - Hanson robotics](https://www.hansonrobotics.com/sophia/)
+:::
+
+:::
+
+:::
+
+## [Commertial robots]{.monash-blue} today {auto-animate=true}
+
+`r noa(w = "200px", flip = TRUE, other = 'data-id="noa"')`  `r kuka(w = "280px", other = 'data-id="kuka"')`  `r boston(w = "200px", other = 'data-id="boston"' )` `r ur(w = "300px", other = 'data-id="ur"' )` `r atlas(w = "200px", other = 'data-id="atlas"')`
+
+::: footer
+[Nao robot](https://www.scienceabc.com/innovation/history-evolution-robots-robotics-pathfinder-hal-nadine.html), [Kuka robot arm](https://www.turbosquid.com/3d-models/kuka-robot-titan-rigged-3d-model/1034914), [Spot mini dog]( https://www.cgtrader.com/3d-models/industrial/industrial-machine/boston-dynamics-spot-mini-robot), [UR5 Cobot](https://www.universal-robots.com/es/acerca-de-universal-robots/beneficios-de-los-robots-colaborativos/?utm_source=Bing&utm_medium=paid-search&utm_campaign=HQ_Direct_paid-search_Bing_2024-3-1_SEMEA+UK+Always+On&utm_content=Direct-Direct&utm_campaign_id=701P4000009iw1XIAQ&utm_term=robots%20colaborativos&msclkid=2224f42187a310679fdf9323f8c6b9cd) y [Atlas robot](https://www.foxnews.com/tech/this-humanoid-atlas-robot-can-take-a-punch)
+:::
+
+
+# {background-image="images/moxii-bg.svg"}
+
+<br>
+<br>
+<br>
+<br>
+
+::: {.fragment style="font-size:24pt;"}
+`r fa_list(c("fa-solid fa-link" = "Slides based on [emitanaka.org/slides/Ihaka2022/](https://emitanaka.org/slides/Ihaka2022/)", "fa-brands fa-r-project" = '<i class="fa-solid fa-terminal"></i> Created with <code>Quarto</code>', "fa-solid fa-envelope" = "[sergioaugustoantenor.jacobo@alumnos.uc3m.es](mailto:sergioaugustoantenor.jacobo@alumnos.uc3m.es)"))`
+:::
+
+
