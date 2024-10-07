@@ -2,7 +2,7 @@
 pagetitle: "Robot Autonomy"
 subtitle: "Autonomus and intelligent robots"
 author: "Sergio Jácobo"
-date: "8 oct 2024"
+date: "Oct. 8 2024"
 email: "sergioaugustoantenor.jacobo@alumnos.uc3m.es"
 host: "Ihaka Lecture"
 institute: "Carlos III University"
