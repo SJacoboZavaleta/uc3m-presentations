@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 2dea8d57-0cad-4259-864b-5b65cf00f420
+      url: 'https://jacobozavaleta.quarto.pub/s10_introrobots'
