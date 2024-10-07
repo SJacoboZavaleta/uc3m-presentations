@@ -11,6 +11,7 @@ strip-comments: true
 format: 
   revealjs:
     logo: "images/uc3m_logo2_vector.svg"
+    incremental: true
     slide-number: true
     multiplex: true
     pdf: true
@@ -232,7 +233,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 
 # [What robots are there today?]{.strokeme} {.bg-green}
 
-## [Estado del Arte]{.monash-blue} {.title-slide2 auto-animate=true}
+## [State of Art]{.monash-blue} {.title-slide2 auto-animate=true}
 
 ::: flex
 
@@ -276,7 +277,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 <br>
 <br>
 
-::: {.fragment style="font-size:24pt;"}
+::: {.bottom_abs style="font-size:24pt;"}
 `r fa_list(c("fa-solid fa-link" = "Slides based on [emitanaka.org/slides/Ihaka2022/](https://emitanaka.org/slides/Ihaka2022/)", "fa-brands fa-r-project" = '<i class="fa-solid fa-terminal"></i> Created with <code>Quarto</code>', "fa-solid fa-envelope" = "[sergioaugustoantenor.jacobo@alumnos.uc3m.es](mailto:sergioaugustoantenor.jacobo@alumnos.uc3m.es)"))`
 :::
 
