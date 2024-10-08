@@ -89,7 +89,7 @@ fa_list <- function(x, incremental = FALSE) {
 
 Student: *`r rmarkdown::metadata$author`*
 
-<i class="fas fa-university"></i> `r rmarkdown::metadata$department`, <Br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`r rmarkdown::metadata$institute`, Madrid, Spain
+<i class="fas fa-university"></i> `r rmarkdown::metadata$department`, <Br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`r rmarkdown::metadata$institute`, Madrid
 
 <i class="fas fa-envelope"></i>  `r rmarkdown::metadata$email`
 
@@ -159,7 +159,7 @@ Student: *`r rmarkdown::metadata$author`*
 <br><br> 
 
 ::: {.fragment .fade-up fragment-index=1}
-The capacity to perform specific tasks without [**"human interaction"**]{.monash-blue2} within a known working environment.
+The ability to perform specific tasks without [**"human intervention"**]{.monash-blue2} in a known working environment.
 :::
 
 :::
@@ -171,7 +171,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 :::
 
 
-## Should a robot be [autonomous]{.monash-ruby2}{auto-animate=true}
+## Should a robot be [autonomous]{.monash-ruby2}? {auto-animate=true}
 
 ::: flex
 
@@ -184,7 +184,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 
 <div class="fat-diet">Why?</div>
 
-`r fa_list(c("fa-solid fa-spinner fa-pulse" = "Minimize working load and maximize productivity", "fa-solid fa-user-slash fa-beat" = "Perform continuos work even without constant human communication/supervision"), incremental = TRUE)`
+`r fa_list(c("fa-solid fa-spinner fa-pulse" = "Minimize workload and maximize productivity.", "fa-solid fa-user-slash fa-beat" = "Perform continuous tasks even without constant human supervision or communication."), incremental = TRUE)`
 
 :::
 
@@ -200,7 +200,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 <a href="https://en.wikipedia.org/wiki/ASIMO">ASIMO</a> (2000) at the Expo 2005 from <a href="https://commons.wikimedia.org/wiki/File:HONDA_ASIMO.jpg">Wikipedia</a>
 :::
 
-## Should a robot be [autonomous]{.monash-ruby2}{auto-animate=true}
+## Should a robot be [autonomous]{.monash-ruby2}? {auto-animate=true}
 
 ::: flex
 
@@ -213,7 +213,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 <div class="fat-diet">Why?</div>
 <div class="control-diet" data-id="trt1">How?</div>
 
-`r fa_list(c("fa-solid fa-gear fa-spin" = "Hability to take own decisions based on sensor data", "fa-solid fa-robot fa-bounce" = "Interact with the environment based on any kind of manipulation/communication"), incremental = TRUE)`
+`r fa_list(c("fa-solid fa-gear fa-spin" = "Ability to make decisions based on sensor data.", "fa-solid fa-robot fa-bounce" = "Interact with the environment through manipulation or communication."), incremental = TRUE)`
 :::
 
 ::: w-20
@@ -228,9 +228,9 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 <a href="https://en.wikipedia.org/wiki/ASIMO">ASIMO</a> (2000) at the Expo 2005 from <a href="https://commons.wikimedia.org/wiki/File:HONDA_ASIMO.jpg">Wikipedia</a>
 :::
 
-# [What robots are there today?]{.strokeme} {.bg-green}
+# [What robots exist today?]{.strokeme} {.bg-green}
 
-## [State of Art]{.monash-blue} {.title-slide2 auto-animate=true}
+## [State of the art]{.monash-blue} {.title-slide2 auto-animate=true}
 
 ::: flex
 
@@ -258,7 +258,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 
 :::
 
-## [Commertial robots]{.monash-blue} today {auto-animate=true}
+## [Commercial robots]{.monash-blue} today {auto-animate=true}
 
 `r noa(w = "200px", flip = TRUE, other = 'data-id="noa"')`  `r kuka(w = "200px", other = 'data-id="kuka"')`  `r boston(w = "200px", other = 'data-id="boston"' )` `r ur(w = "200px", other = 'data-id="ur"' )` `r atlas(w = "200px", other = 'data-id="atlas"')`
 
@@ -270,7 +270,7 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 
 ::: {.r-fit-text}
 * **Social**  
-  * [Changes in human interaction]{.fragment .highlight-red}. In customer services.  
+  * [Changes in human-robot interaction]{.fragment .highlight-red}, particularly in customer service.
 
 * **Politics**  
   * [Regulation and governance]{.fragment .highlight-red}. Preventing tech. from being misused.
