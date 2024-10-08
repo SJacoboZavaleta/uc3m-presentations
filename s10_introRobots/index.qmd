@@ -1,6 +1,6 @@
 ---
 pagetitle: "Robot Autonomy"
-subtitle: "Autonomus and intelligent robots"
+subtitle: "Autonomous and Intelligent Robots"
 author: "Sergio Jácobo"
 date: "Oct. 8 2024"
 email: "sergioaugustoantenor.jacobo@alumnos.uc3m.es"
