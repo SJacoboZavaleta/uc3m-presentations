@@ -293,5 +293,5 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 <br>
 
 ::: {.bottom_abs style="font-size:24pt;"}
-`r fa_list(c("fa-solid fa-link" = "Slides based on [emitanaka.org/slides/Ihaka2022/](https://emitanaka.org/slides/Ihaka2022/)", "fa-brands fa-r-project" = '<i class="fa-solid fa-terminal"></i> Created with <code>Quarto</code>', "fa-solid fa-envelope" = "[sergioaugustoantenor.jacobo@alumnos.uc3m.es](mailto:sergioaugustoantenor.jacobo@alumnos.uc3m.es)"))`
+`r fa_list(c("fa-solid fa-link" = "[Slides](https://jacobozavaleta.quarto.pub/s10_introrobots/#/title-slide) based on [emitanaka.org/slides/Ihaka2022/](https://emitanaka.org/slides/Ihaka2022/)", "fa-brands fa-r-project" = '<i class="fa-solid fa-terminal"></i> Created with <code>Quarto</code>', "fa-solid fa-envelope" = "[sergioaugustoantenor.jacobo@alumnos.uc3m.es](mailto:sergioaugustoantenor.jacobo@alumnos.uc3m.es)"))`
 :::
