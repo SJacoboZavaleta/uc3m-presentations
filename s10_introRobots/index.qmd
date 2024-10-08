@@ -4,7 +4,6 @@ subtitle: "Autonomus and intelligent robots"
 author: "Sergio Jácobo"
 date: "Oct. 8 2024"
 email: "sergioaugustoantenor.jacobo@alumnos.uc3m.es"
-host: "Ihaka Lecture"
 institute: "Carlos III University"
 department: "Systems Engineering and Automation Department"
 strip-comments: true
@@ -12,14 +11,12 @@ format:
   revealjs:
     logo: "images/uc3m_logo2_vector.svg"
     incremental: true
+    auto-animate: true
     slide-number: true
     multiplex: true
-    pdf: true
     theme: assets/monash.scss
     show-slide-number: all
     controls: true
-    width: 1280
-    height: 720
     css: [assets/custom.css, assets/pacman.css, assets/tachyons-addon.css, assets/slide-types.css]
     include-after: |
       <link rel="stylesheet" href="assets/syntax-highlight.css">
@@ -102,7 +99,7 @@ Student: *`r rmarkdown::metadata$author`*
 
 :::
 
-## Key ideas
+## [Key ideas]{.monash-blue}
 
 ::: {.flex .justify-around}
 ::: w-30
@@ -154,7 +151,7 @@ Student: *`r rmarkdown::metadata$author`*
 ::: w-80 
 <Br><br>
 
-::: f2
+::: f3
 `r rotating_text(c('[**Following a black line** along a path]{.speech}', '[**Palletizing** shipping boxes in a factory]{.speech}', '[**Cleaning** floors by convering the entire house]{.speech}', '[**Exploring** the surface of an unknown planet]{.speech}', '[Engaging in a queation-answer interaction with elderly people]{.speech}'), align = 'left!important')`
 :::
 
@@ -263,12 +260,30 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 
 ## [Commertial robots]{.monash-blue} today {auto-animate=true}
 
-`r noa(w = "200px", flip = TRUE, other = 'data-id="noa"')`  `r kuka(w = "280px", other = 'data-id="kuka"')`  `r boston(w = "200px", other = 'data-id="boston"' )` `r ur(w = "300px", other = 'data-id="ur"' )` `r atlas(w = "200px", other = 'data-id="atlas"')`
+`r noa(w = "200px", flip = TRUE, other = 'data-id="noa"')`  `r kuka(w = "200px", other = 'data-id="kuka"')`  `r boston(w = "200px", other = 'data-id="boston"' )` `r ur(w = "200px", other = 'data-id="ur"' )` `r atlas(w = "200px", other = 'data-id="atlas"')`
 
 ::: footer
 [Nao robot](https://www.scienceabc.com/innovation/history-evolution-robots-robotics-pathfinder-hal-nadine.html), [Kuka robot arm](https://www.turbosquid.com/3d-models/kuka-robot-titan-rigged-3d-model/1034914), [Spot mini dog]( https://www.cgtrader.com/3d-models/industrial/industrial-machine/boston-dynamics-spot-mini-robot), [UR5 Cobot](https://www.universal-robots.com/es/acerca-de-universal-robots/beneficios-de-los-robots-colaborativos/?utm_source=Bing&utm_medium=paid-search&utm_campaign=HQ_Direct_paid-search_Bing_2024-3-1_SEMEA+UK+Always+On&utm_content=Direct-Direct&utm_campaign_id=701P4000009iw1XIAQ&utm_term=robots%20colaborativos&msclkid=2224f42187a310679fdf9323f8c6b9cd) y [Atlas robot](https://www.foxnews.com/tech/this-humanoid-atlas-robot-can-take-a-punch)
 :::
 
+## [Effects of high-level autonomy]{.monash-blue} on society {auto-animate=true}
+
+::: {.r-fit-text}
+* **Social**  
+  * [Changes in human interaction]{.fragment .highlight-red}. In customer services.  
+
+* **Politics**  
+  * [Regulation and governance]{.fragment .highlight-red}. Preventing tech. from being misused.
+
+* **Education**  
+  * Change in [required professional skills]{.fragment .highlight-red}.
+
+* **Industry**  
+  * Increase in [efficiency and productivity]{.fragment .highlight-red}.
+
+* **Ethics**  
+  * [Moral responsibility]{.fragment .highlight-red}. Decisions without human intervention?
+:::
 
 # {background-image="images/moxii-bg.svg"}
 
@@ -280,5 +295,3 @@ A draw of a robot generated with AI in <a href="https://www.freepik.es/fotos-pre
 ::: {.bottom_abs style="font-size:24pt;"}
 `r fa_list(c("fa-solid fa-link" = "Slides based on [emitanaka.org/slides/Ihaka2022/](https://emitanaka.org/slides/Ihaka2022/)", "fa-brands fa-r-project" = '<i class="fa-solid fa-terminal"></i> Created with <code>Quarto</code>', "fa-solid fa-envelope" = "[sergioaugustoantenor.jacobo@alumnos.uc3m.es](mailto:sergioaugustoantenor.jacobo@alumnos.uc3m.es)"))`
 :::
-
-

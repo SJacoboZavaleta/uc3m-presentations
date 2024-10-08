@@ -347,7 +347,7 @@ Autonomus and intelligent robots
 </div>
 </section>
 <section id="key-ideas" class="slide level2">
-<h2>Key ideas</h2>
+<h2><span class="monash-blue">Key ideas</span></h2>
 <div class="flex justify-around">
 <div class="w-30">
 <p><img src="images/robotDraft1.svg" height="400px"></p>
@@ -389,7 +389,7 @@ A draft <span class="monash-blue2">meaning</span>
 </div>
 <div class="w-80">
 <p><br><br></p>
-<div class="f2">
+<div class="f3">
 <div style="overflow: hidden; height: 1.2em;">
 <ul class="content__container__list left!important" style="text-align: left!important">
 <li class="content__container__list__item">
@@ -502,9 +502,36 @@ How?
 </section>
 <section id="commertial-robots-today" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"><span class="monash-blue">Commertial robots</span> today</h2>
-<p><img src="images/characters/noa.svg" data-id="noa" width="200px" class="img-hor"> <img src="images/characters/kuka.svg" data-id="kuka" width="280px" class=""> <img src="images/characters/boston.svg" data-id="boston" width="200px" class=""> <img src="images/characters/ur.svg" data-id="ur" width="300px" class=""> <img src="images/characters/atlas.svg" data-id="atlas" width="200px" class=""></p>
+<p><img src="images/characters/noa.svg" data-id="noa" width="200px" class="img-hor"> <img src="images/characters/kuka.svg" data-id="kuka" width="200px" class=""> <img src="images/characters/boston.svg" data-id="boston" width="200px" class=""> <img src="images/characters/ur.svg" data-id="ur" width="200px" class=""> <img src="images/characters/atlas.svg" data-id="atlas" width="200px" class=""></p>
 <div class="footer">
 <p><a href="https://www.scienceabc.com/innovation/history-evolution-robots-robotics-pathfinder-hal-nadine.html">Nao robot</a>, <a href="https://www.turbosquid.com/3d-models/kuka-robot-titan-rigged-3d-model/1034914">Kuka robot arm</a>, <a href="https://www.cgtrader.com/3d-models/industrial/industrial-machine/boston-dynamics-spot-mini-robot">Spot mini dog</a>, <a href="https://www.universal-robots.com/es/acerca-de-universal-robots/beneficios-de-los-robots-colaborativos/?utm_source=Bing&amp;utm_medium=paid-search&amp;utm_campaign=HQ_Direct_paid-search_Bing_2024-3-1_SEMEA+UK+Always+On&amp;utm_content=Direct-Direct&amp;utm_campaign_id=701P4000009iw1XIAQ&amp;utm_term=robots%20colaborativos&amp;msclkid=2224f42187a310679fdf9323f8c6b9cd">UR5 Cobot</a> y <a href="https://www.foxnews.com/tech/this-humanoid-atlas-robot-can-take-a-punch">Atlas robot</a></p>
+</div>
+</section>
+<section id="effects-of-high-level-autonomy-on-society" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span class="monash-blue">Effects of high-level autonomy</span> on society</h2>
+<div class="r-fit-text">
+<ul>
+<li class="fragment"><strong>Social</strong>
+<ul>
+<li class="fragment"><span class="fragment highlight-red">Changes in human interaction</span>. In customer services.</li>
+</ul></li>
+<li class="fragment"><strong>Politics</strong>
+<ul>
+<li class="fragment"><span class="fragment highlight-red">Regulation and governance</span>. Preventing tech. from being misused.</li>
+</ul></li>
+<li class="fragment"><strong>Education</strong>
+<ul>
+<li class="fragment">Change in <span class="fragment highlight-red">required professional skills</span>.</li>
+</ul></li>
+<li class="fragment"><strong>Industry</strong>
+<ul>
+<li class="fragment">Increase in <span class="fragment highlight-red">efficiency and productivity</span>.</li>
+</ul></li>
+<li class="fragment"><strong>Ethics</strong>
+<ul>
+<li class="fragment"><span class="fragment highlight-red">Moral responsibility</span>. Decisions without human intervention?</li>
+</ul></li>
+</ul>
 </div>
 </section></section>
 <section id="section-1" class="title-slide slide level1 center" data-background-image="images/moxii-bg.svg">
@@ -710,9 +737,9 @@ How?
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1280,
+        width: 1050,
 
-        height: 720,
+        height: 700,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
@@ -909,7 +936,7 @@ How?
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/jacobozavaleta\.quarto\.pub\/s10_introrobots");
+          var filterRegex = new RegExp('/' + window.location.host + '/');
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
