@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+
+
+
+# Ignorar carpetas renv
+s30_futureRobots/renv/

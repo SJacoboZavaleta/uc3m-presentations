@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 92e33175-1a2e-42e4-b121-64c3fbe99085
+      url: 'https://jacobozavaleta.quarto.pub/s20_intelligence'

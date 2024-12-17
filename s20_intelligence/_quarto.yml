@@ -1,0 +1,7 @@
+project:
+  type: website
+
+output:
+  revealjs:
+    theme: default
+    transition: fade

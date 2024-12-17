@@ -1,0 +1,20 @@
+title: UC3M Presentation Template
+author: Sergio Jacobo Zavaleta 
+version: 1.0.0
+quarto-required: ">=1.2.231"
+contributes:
+  formats:
+    revealjs:
+      slide-number: c
+      show-slide-number: print
+      highlight-style: github
+      theme: [uc3m_slides.scss, custom.scss]
+      logo: uc3m_logo_vector.svg
+      template-partials:
+        - title-slide.html
+      footer: |
+        <div class="my-footer">
+          <div class="footer-left">{{< meta author >}}</div>
+          <div class="footer-right">{{< meta email >}}</div>
+        </div>
+# footer: "[Third Foundation](https://sjacobozavaleta.github.io/)"

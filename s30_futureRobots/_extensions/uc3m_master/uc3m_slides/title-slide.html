@@ -1,0 +1,31 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <div class="title-block">
+    <h1 class="title">$title$</h1>
+    $if(subtitle)$
+    <p class="subtitle">$subtitle$</p>
+    $endif$
+    
+    <div class="author-block">
+      <div class="author">
+        $author$<sup>$if(orcid)$
+          <a href="https://orcid.org/$orcid$" class="orcid-link">
+            <img src="img/orcid_16x16.webp" alt="ORCID"/>
+          </a>
+          $endif$</sup>
+      </div>
+      $if(email)$
+      <div class="email">$email$</div>
+      $endif$
+      $if(course)$
+      <div class="course">$course$</div>
+      $endif$
+      $if(institute)$
+      <div class="institute">$institute$</div>
+      $endif$
+    </div>
+    
+    $if(date)$
+    <p class="date">$date$</p>
+    $endif$
+  </div>
+</section>

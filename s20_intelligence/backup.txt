@@ -1,0 +1,55 @@
+<!-- ::: title-box -->
+  
+  <!-- <h2>`r rmarkdown::metadata$pagetitle` </h2> -->
+  
+  <!-- 👩🏻‍💻 [`r rmarkdown::metadata$author` @ `r rmarkdown::metadata$institute`]{.author}   -->
+  
+  
+  <!-- `r rotating_text(c('<i class="fa-solid fa-envelope"></i> emi.tanaka@monash.edu', '<i class="fa-brands fa-twitter"></i> @statsgen', '<i class="fa-brands fa-github"></i> github.com/emitanaka', '<i class="fa-solid fa-globe"></i> emitanaka.org'))` -->
+  
+  
+  <!-- ::: -->
+  
+  
+  <!-- <br><br> -->
+  
+  <!-- ::: {.absolute .bottom-0 .monash-white .w-100} -->
+  
+  <!-- [`r rmarkdown::metadata$date`]{.monash-white .fl} [`r rmarkdown::metadata$host`]{.fr .monash-white}  -->
+  
+  <!-- ::: -->
+  
+  
+  
+  https://www.pinterest.com/pin/472244710917543702/
+  
+  https://www.cgtrader.com/3d-models/industrial/industrial-machine/boston-dynamics-spot-mini-robot
+  
+  
+  https://www.laingbuissonnews.com/healthcare-markets-international-content/interviews-healthcare-markets-international-content/the-rise-of-the-social-robot-hmi-meets-moxie/
+  
+  
+  https://www.pinterest.com/pin/370280400590195236/
+  
+  https://science.howstuffworks.com/asimo.htm
+  
+  https://en.wikipedia.org/wiki/Robot#/media/File:HONDA_ASIMO.jpg
+  
+  https://es.pinterest.com/pin/369998925619274666/
+  
+  https://wropotics.blogspot.com/2014/01/asimo-new-robots-of-honda.html
+  
+  https://www.forbes.com/sites/alexknapp/2016/07/14/using-soft-robots-to-pick-and-pack-produce/
+  
+  
+  
+  https://www.science.org/doi/10.1126/scirobotics.aah3690
+  
+  https://5thaxis.com/automation/
+  https://www.inverse.com/article/10923-google-s-self-driving-cars-drive-3-million-simulated-miles-a-day
+  https://botland.store/withdrawn-products/2740-line-tracing-car-line-follower-robot-diy-kit-5904422360931.html
+  
+  https://www.jpl.nasa.gov/missions/mars-science-laboratory-curiosity-rover-msl/
+  
+  
+  https://techcrunch.com/2024/04/25/sanctuarys-new-humanoid-robot-learns-faster-and-costs-less/

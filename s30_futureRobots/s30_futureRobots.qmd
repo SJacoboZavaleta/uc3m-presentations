@@ -1,0 +1,826 @@
+---
+title: "The future of Commercial Robots"
+title-slide-attributes:
+  data-background-image: /img/bg.svg
+  data-background-size: cover
+  data-background-opacity: "0.8"
+author: "Sergio Jácobo Zavaleta"
+orcid: "0000-0000-0000-0000"
+course: "Course: Intelligent and Autonomous Robots"
+lesson: 3
+institute: Master in Robotics and Automation, Carlos III de Madrid University
+date: "12/06/2024"
+email: "100514566@alumnos.uc3m.es"
+date-format: "DD-MM-YYYY"
+format: uc3m_master/uc3m_slides-revealjs
+---
+```{r}
+#| include: false
+#| echo: false
+#| message: false
+library(knitr)
+library(kableExtra)
+```
+
+# State-of-the-art of Commercial Robots {background-color=#87CEEB}
+
+## Current state of Commercial Robots {.r-fit-text}
+### Disruptive techonologies 
+
+> *What do we have today?* 🌍
+
+- Artificial Intelligence and Machine Learning
+- Computer Vision
+- Micro, nano and [soft robotics]{.alert}.  
+- Edge, Cloud and Quantum Computing
+- Computer processing  
+- Advance Material Science
+
+
+## Current state of Commercial Robots {.r-fit-text}
+### Current potential Challenges
+
+> *Are there political and societal limitations?* 🤔
+
+- Ethical considerations
+- Privacy and security
+- Job market transformation
+- Regulatory frameworks
+- Societal acceptance
+
+
+# 5-year Horizon (2029) {background-color="#FFD700"}
+::: {.arrow-list .center-x}
+- Increasing AI-driven personalization  
+- Enhanced natural language processing
+:::
+
+## 5-year Horizon (2029)
+### 1. Healthcare and Assistive Robots 
+```{r echo=FALSE, out.width='90%', fig.align='center'} 
+data <- data.frame(
+  Application = c("Surgical Assistants", "Elderly Care Robots", "Rehabilitation Robots"),
+  Technology = c("Micro-robotic Instruments", "Soft Exoskeletons", "Adaptive Neural Interfaces"),
+  Capabilities = c("Precision surgeries, minimal invasiveness", "Personal assistance, mobility support", "Personalized therapy, movement retraining"),
+  Market_Potential = c("High", "Very High", "High")
+)
+
+kable(data, format = "html", booktabs = TRUE, linesep = "") %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 30)
+```
+
+<!-- #%>%
+  #add_header_above(c("Healthcare and Assistive Robots" = 4)) -->
+
+## 5-year Horizon (2029):
+### 2. Manufacturing and Industrial Robots
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+data4 <- data.frame(
+  Application = c("Better collaborative robots", "Autonomous bio-inspired robots", "Computer-vision aided robots", "AI powered drones and quadcopters systems", "Soft Robotics in Assembly"),
+  Capabilities = c("Enhanced safety features and control interfaces", "Reinforcement learning based on human feedback", "Rapid reconfiguration and feature recognition", "Fully autonomous delivery robots and drones", "Delicate process handling"),
+  Benefits = c("Improved worker safety", "Increased efficiency and reduce training costs", "Autonomous control systems","Reduced downtime and optimal delivery performance", "Precision in delicate tasks"),
+  Market_Potential = c("Very High", "Very High", "Very High", "High", "High")
+)
+
+kable(data4, format = "html", booktabs = TRUE, linesep = "") %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 25)
+```
+
+<!--  #### Key Characteristics:
+- Highly specialized, purpose-built robotic systems
+- Significant human-robot collaboration
+- Focus on augmentation rather than full automation
+- Increasing AI-driven personalization -->
+
+## 5-year Horizon (2029): Examples
+
+:::: {.columns}
+::: {.column width="50%"}
+### Current robots
+::: {.r-stack}
+![[source 1](https://www.nature.com/articles/s41467-021-27261-0)](img/30/41467_2021_27261_Fig8_HTML.webp){.fragment width="450" }
+
+![[source 2](https://www.3dnatives.com/en/biorobotics-robots-mimic-movements-nature-animals-3d-printed-robotics-221020184/)](img/30/Interview_Biorobotics5.jpg){.fragment width="450" }
+
+![[source 3](https://techxplore.com/news/2023-08-visionbased-teleoperation-robots.html)](img/30/a-computer-vision-base.jpg){.fragment width="750" height="300"}
+
+![[source 4](https://www.gao.gov/products/gao-23-106930)](img/30/gao-23-106930.png){.fragment width="750" height="300"}
+
+![[source 5](https://www.science.org/doi/10.1126/scirobotics.aah3690)](img/30/softRobotics1.jpg){.fragment width="750" height="300"}
+:::
+:::
+
+::: {.column width="50%"}
+### Future robots
+::: {.r-stack}
+![](img/30/robots_future1.svg){.fragment width="750"}
+
+:::
+:::
+::::
+
+
+
+# 10-year Horizon (2034) {background-color="#FF69B4"}
+::: {.gear-list .center-x}
+- Significant human-robot collaboration
+:::
+
+::: {.gear-list .center-x}
+- Focus on augmentation rather than full automation
+:::
+
+## 10-year Horizon (2034)
+### Consumer and Home Robotics
+
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+data2 <- data.frame(
+  Robot_Type = c("Multi-purpose Home Assistant", "Personal Healthcare Companion", "Educational Robotic Tutors"),
+  Functionality = c("Domestic tasks, emotional support", "Health monitoring, early diagnosis", "Personalized learning"),
+  Unique_Features = c("Advanced contextual understanding", "Continuous biometric tracking", "Adaptive curriculum, emotional intelligence"),
+  Expected_Impact = c("Very High", "High", "High")
+)
+
+kable(data2, format = "html", booktabs = TRUE, linesep = "") %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 30)
+```
+
+## 10-year Horizon (2034): Examples
+
+:::: {.columns}
+::: {.column width="50%"}
+### Current robots
+::: {.r-stack}
+![[source 1](https://www.openaccessgovernment.org/humanoid-robot/107636/)](img/30/The-overall-pipeline-of-robotic-manipulation-of-deformable-objects.png){.fragment width="750"}
+
+![[source 2](https://www.amlu.com/2015/03/04/robear-robot-assists-nurses-in-caring-for-the-elderly/)](img/30/robear-robot-assists-nurses-in-caring-for-the-elderly4.jpg){.fragment width="450" }
+
+![[source 3](https://www.robotlab.com/blog/how-robotics-improves-education-at-school)](img/30/NAO-1-1.webp){.fragment width="600" height="400"}
+
+:::
+:::
+
+::: {.column width="50%"}
+### Future robots
+::: {.r-stack}
+![](img/30/robots_future2.svg){.fragment width="500"}
+
+![](img/30/robots_future3.svg){.fragment width="500"}
+
+:::
+:::
+::::
+
+<!-- #### Technological Foundations:
+- Advanced neural network architectures
+- Quantum computing-enhanced decision making
+- Biomimetic design principles
+- Enhanced natural language processing
+
+### Transportation and Logistics
+- Fully autonomous delivery robots and drones
+- Self-reconfiguring logistics systems
+- Urban mobility robotics with advanced environmental adaptation
+- Soft robotic vehicles with shape-changing capabilities -->
+
+
+# 20-year Horizon (2034) {background-color="#40E0D0"}
+
+::: {.robot-list .center-x}
+- Highly specialized, purpose-built robotic systems
+:::
+
+::: {.robot-list .center-x}
+- Soft Robotics Revolution  
+- Biomimetic design principles  
+:::
+
+
+## 20-year Horizon (2044)
+### Revolutionary Robots
+
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+data3 <- data.frame(
+  Domain = c("Biorobotics", "Environmental manipulation", "Space Exploration"),
+  Predicted_Capabilities = c("Living tissue integration, artificial tendons manipulation", "Large-scale ecosystem management: sowing, harvesting, fertilizing", "Adaptive, self-replicating exploration units"),
+  Enabling_Technologies = c("Synthetic biology, advanced materials", "Swarm robotics, nano-scale and precise wide-range sensors", "Advanced AI, quantum navigation systems and eco-based batteries")
+)
+
+kable(data3, format = "html", booktabs = TRUE, linesep = "") %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 30)
+```
+
+## 20-year Horizon (2044): Examples
+
+:::: {.columns}
+::: {.column width="50%"}
+### Current robots
+::: {.r-stack}
+![[source 1](http://dx.doi.org/10.1126/science.1254486)](img/30/Example-of-biorobots-A-RoboTuna-35-B-Lamprey-robot-39-C-Salamandra.png){.fragment width="450" }
+
+![[source 2](https://climatechange-theneweconomy.com/cop23-series-can-robotics-help-combat-climate-change/)](img/30/deep-field-robots-robotics-agtech-agriculture.png){.fragment width="600" height="400"}
+
+![[source 3](https://www.inceptivemind.com/spacebok-jumping-robot-built-explore-moon-mars-asteroids/8023/)](img/30/SpaceBok-robot.jpg){.fragment width="750" height="300"}
+:::
+:::
+
+::: {.column width="50%"}
+### Future robots
+::: {.r-stack}
+![](img/30/robots_future4.svg){.fragment width="750"}
+
+![](img/30/robots_future5.svg){.fragment width="750"}
+
+:::
+:::
+::::
+
+<!-- #### Paradigm-Shifting Characteristics:
+- Nearly seamless human-robot integration
+- Biomimetic and bio-inspired design dominance
+- Ethical AI with robust decision-making frameworks
+- Decentralized, self-organizing robotic networks
+
+### Soft Robotics Revolution
+- Complete material adaptability
+- Energy harvesting from environmental interactions
+- Self-healing and self-reconfiguring capabilities
+- Organic, fluid movement patterns -->
+
+# Conclusions {.r-fit-text}
+
+- Robots will transform industries and daily life. 
+
+- In healthcare, precision surgeries will be enhanced by [micro-robotic instruments]{.bg style="--col: #e64173"}. 
+
+- In the consumer sector, home assistants will become more advanced, offering [personalized healthcare monitoring]{.bg style="--col: #e64173"}. 
+
+- Human-robot collaboration will focus [on augmenting human capabilities]{.bg style="--col: #e64173"}. 
+
+- Revolutionary advancements will include biorobotics with [living tissue integration and adaptive robots]{.bg style="--col: #e64173"} for space exploration.
+
+
+
+# Thanks! {.thanks background-image="img/bg-01n.svg" background-size="cover" background-position="center" background-attachment="fixed"}
+
+[[Back to main]{.button}](#current-state-of-commercial-robots)
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ## Quarto presentation formats
+
+
+## What is revealjs?
+
+> reveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.
+
+. . .
+
+- There is an R package for RMarkdown 
+- You can use your favorite editor:
+  - RStudio
+  - VS Code
+
+```r
+install.packages("revealjs")
+```
+
+but it is rarely used since `xaringan` (based on `knitr` and `remark.js`, no Pandoc) is more popular
+
+## No need to learn new syntax
+
+
+```{.markdown  code-line-numbers="false"}
+---
+format: revealjs
+---
+
+## Slide 1
+Add some content
+
+## Slide 2
+- and 
+- maybe
+- a 
+- list
+
+```
+
+Render to pptx? set `format: pptx`  
+Render to beamer? set `format: beamer`
+
+:::{.aside}
+Switching between formats is THAT easy as long as you do not have any "fancy" features included
+:::
+
+## HTML divs and spans with Pandoc
+
+```{.markdown  code-line-numbers="false"}
+::: {.class}
+Content in a div with a class
+:::
+
+Some text with a specific [span]{.span-class}
+```
+
+Pandoc translates this to
+```{.html code-line-numbers="false"}
+<div class="class">
+   Content in a div with a class
+</div>
+Some text with a specific <span class="span-class">span</span>
+```
+
+## Incremental lists
+
+```{.markdown code-line-numbers="false"}
+:::{.incremental}
+- item 1
+- item 2
+- item 3
+:::
+```
+
+:::{.incremental}
+- item 1
+- item 2
+- item 3
+:::
+
+## Incremental Slides
+
+Use `. . .` syntax  
+
+```{.markdown code-line-numbers="false"}
+This appears first 
+
+. . .
+
+This second
+```
+
+<br>
+
+. . .
+
+This appears first 
+
+. . .
+
+This second
+
+## Fragments, Basics
+
+```{.markdown code-line-numbers="false"}
+
+::: {.fragment}
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+```
+
+## Fragments, Basics
+
+::: {.fragment}
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+
+## Fragments, More
+
+This is an [important sentence!]{.fragment .highlight-red}
+```{.markdown code-line-numbers="false"}
+This is an [important sentence!]{.fragment .highlight-red}
+```
+
+::: {.fragment .fade-in}
+::: {.fragment .highlight-red}
+::: {.fragment .semi-fade-out}
+Fade in > Turn red > Semi fade out
+:::
+:::
+:::
+
+. . .
+
+```{.markdown code-line-numbers="false"}
+::: {.fragment .fade-in}
+::: {.fragment .highlight-red}
+::: {.fragment .semi-fade-out}
+Fade in > Turn red > Semi fade out
+:::
+:::
+:::
+```
+
+## Slide Transition {transition="fade"}
+
+:::{.r-fit-text}
+fade
+:::
+
+:::{.aside}
+```{.markdown code-line-numbers="false"}
+## Slide Transition {transition="fade"}
+```
+:::
+
+## Slide Transition {transition="slide"}
+
+:::{.r-fit-text}
+slide
+:::
+
+:::{.aside}
+```{.markdown code-line-numbers="false"}
+## Slide Transition {transition="slide"}
+```
+:::
+
+## Slide Transition {transition="convex"}
+
+:::{.r-fit-text}
+convex
+:::
+
+
+:::{.aside}
+```{.markdown code-line-numbers="false"}
+## Slide Transition {transition="convex"}
+```
+:::
+
+## Slide Transition {transition="concave"}
+
+:::{.r-fit-text}
+concave
+:::
+
+
+:::{.aside}
+```{.markdown code-line-numbers="false"}
+## Slide Transition {transition="concave"}
+```
+:::
+
+## Slide Transition {transition="zoom"}
+
+:::{.r-fit-text}
+zoom
+:::
+
+
+:::{.aside}
+```{.markdown code-line-numbers="false"}
+## Slide Transition {transition="zoom"}
+```
+:::
+
+## Slide Transition, global
+
+```{.yaml code-line-numbers="false"}
+---
+title: "Presentation"
+format:
+  revealjs:
+    transition: slide
+    background-transition: fade
+    transition-speed: fast
+---
+```
+
+## Column layout
+
+```{.markdown code-line-numbers="false"}
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+```
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+
+
+
+## Column layout
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{r}
+#| echo: fenced
+#| eval: false
+dplyr::glimpse(mtcars)
+```
+:::
+
+::: {.column width="60%"}
+```{r}
+#| echo: false
+dplyr::glimpse(mtcars)
+```
+:::
+
+::::
+
+## Output location, `column-fragment`
+
+```{r}
+#| echo: fenced
+#| output-location: column-fragment
+#| code-line-numbers: "|2"
+
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
+
+## Output location, `column`
+
+```{r}
+#| echo: fenced
+#| output-location: column
+#| code-line-numbers: "|2"
+
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
+
+## Output location, `fragment`
+
+```{r}
+#| echo: fenced
+#| output-location: fragment
+#| code-line-numbers: "|2"
+
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
+
+## Output location, `slide`
+
+```{r}
+#| echo: fenced
+#| output-location: slide
+#| code-line-numbers: "|2"
+
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
+
+## Code line-highlighting
+
+Use `#| code-line-numbers: "3"` syntax - will highlight line 3 and fade others
+
+```{r}
+#| echo: fenced
+#| output-location: column
+#| code-line-numbers: "3"
+
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
+
+## Code line-highlighting
+
+with a "fragment style"
+
+```{r}
+#| echo: fenced
+#| output-location: column
+#| code-line-numbers: "|3"
+
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
+
+## Code line-highlighting
+
+highlight different line ranges progressively
+
+```{r}
+#| echo: fenced
+#| output-location: column
+#| code-line-numbers: "|3|5|8|10"
+
+library(ggplot2)
+
+mtcars |> 
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "loess", formula = "y~x")
+```
+
+
+
+## Stack images
+
+::: {.r-stack}
+![](../img/kitten1.jpeg){.fragment width="450"}
+
+![](../img/kitten2.jpeg){.fragment width="400"}
+
+![](../img/kitten3.jpeg){.fragment width="300"}
+:::
+
+## Stack images
+
+```{.markdown code-line-numbers="false"}
+::: {.r-stack}
+![](../img/kitten1.jpeg){.fragment width="450"}
+
+![](../img/kitten2.jpeg){.fragment width="400"}
+
+![](../img/kitten3.jpeg){.fragment width="300"}
+:::
+```
+
+# Themes, Colors and other bling {background-color="#F06400"} 
+
+## Background color and image  {background-color="red"} 
+
+Background color:
+```{.markdown code-line-numbers="false"}
+## Background color and image  {background-color="red"} 
+```
+
+. . .
+
+<br>
+
+Background image:
+```{.markdown code-line-numbers="false"}
+## Background color and image  {background-image="<link-to-image>"} 
+```
+
+## Themes
+
+see [https://quarto.org/docs/presentations/revealjs/themes.html](https://quarto.org/docs/presentations/revealjs/themes.html){preview-link="true"}
+
+```{.yaml code-line-numbers="false"}
+---
+title: "Presentation"
+format:
+  revealjs: 
+    theme: dark
+---
+```
+
+. . .
+
+```{.yaml code-line-numbers="false"}
+---
+title: "Presentation"
+format:
+  revealjs: 
+    theme: beige
+---
+```
+
+. . .
+
+```{.yaml code-line-numbers="false"}
+---
+title: "Presentation"
+format:
+  revealjs: 
+    theme: simple
+---
+```
+
+
+
+## Themes via custom SASS
+
+```{.yaml code-line-numbers="false"}
+---
+title: "Presentation"
+format:
+  revealjs: 
+    theme: [default,custom.scss]
+---
+```
+
+`custom.scss`:
+```{.css code-line-numbers="false"}
+/*-- scss:defaults --*/
+
+$body-bg: #191919;
+$body-color: #fff;
+$link-color: #42affa;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+```
+
+
+## Themes via Extensions
+
+Install Extension (**in the folder of your presentation**):
+```{.bash code-line-numbers="false"}
+#|eval: false
+quarto use template gesiscss/quarto-revealjs-fakegesis
+```
+
+. . .
+
+<br>
+
+use in yaml header:
+
+```{.yaml code-line-numbers="false"}
+---
+title: "Let's make a presentation with Quarto"
+author: "David Schoch"
+lesson: 5
+institute: GESIS
+date: "2023-06-20"
+date-format: "YYYY-MM-DD"
+footer: "[Automated Reports & Co with Quarto and Markdown](https://gesiscss.github.io/quarto-workshop/)"
+format: fakegesis-revealjs
+---
+``` -->
