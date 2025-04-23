@@ -6,3 +6,6 @@ Presentations for Master in Robotics and Automation
 - Presentation 3 : [Future of Commercial Robots](https://jacobozavaleta.quarto.pub/s30_futurerobots/)
 
 - Presentation 4 : [USV](https://jacobozavaleta.quarto.pub/s40_marinerobotics/)
+
+- Presentation 5: [Cleaning robots](https://jacobozavaleta.quarto.pub/s50_cleaningrobots/)
+
